@@ -1,7 +1,7 @@
 {
    
     let a = prompt("Ingrese su nombre", "");
-    let b = prompt("Ingrese nombre de la materia ", "");
+    let b = prompt("Ingrese nombre de la materia ", ""); 
     var c = parseInt(prompt("Ingrese la nota 1", ""));
     var d = parseInt(prompt("Ingrese la nota 2", ""));
     var e = parseInt(prompt("Ingrese la nota 3", ""));
