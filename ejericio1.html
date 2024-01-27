@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const numeroDeElementos = parseInt(prompt("Ingresar el número de términos para la serie de Fibonacci:"));
+        let n1 = 0;
+        let n2 = 1
+        let sigTermino = 0;
+
+
+        console.log(" La Serie de Fibonacci es:");
+
+        for (let i = 1; i <= numeroDeElementos; i++) {
+            console.log(n1);
+            sigTermino = n1 + n2;
+            n1 = n2;
+            n2 = sigTermino;
+        }
+
+    </script>
+</body>
+
+</html>
