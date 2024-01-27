@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let inicio = ["una cadena", 3, 9, 1, 10, 500, 1, 10, true];
+
+
+
+/* creacioón de arreglo de solo números */
+        function soloNumeros(array) {
+            var numeros = [];
+            for (var i = 0; i < array.length; i++) {
+                if (typeof (array[i]) == "number") {
+                    numeros.push(array[i]);
+                };
+            }
+            return numeros;
+        }
+
+        console.log(inicio);
+        console.log(soloNumeros(inicio));
+
+
+
+ /* Ordena arreglo de números de mayor a menor */
+        const ordenMayorMenor= desordenArr => {
+            const orden = [...desordenArr];
+            for (let i = 1; i < orden.length; i++) {
+                let length = orden.length - 1;
+                for (let j = length; j >= i; j--) {
+                    if (orden[j - 1] < orden[j]) {
+                        const temp = orden[j - 1];
+                        orden[j - 1] = orden[j];
+                        orden[j] = temp;
+                    }
+                }
+            }
+            return orden;
+            
+        }
+
+
+        (function () {
+            const mayorMenor = ordenMayorMenor(soloNumeros(inicio)).join(', ');
+
+            console.log(`Ordenado de mayor a menor: ${mayorMenor}`);
+           
+
+        })();
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
